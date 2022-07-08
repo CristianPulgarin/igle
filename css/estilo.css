@@ -1,0 +1,1221 @@
+* 
+{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    
+    
+}
+
+/*Menu*/
+.textos-header  { 
+    width: 100%;
+    height: 600px;
+     
+    
+    
+    background: url(../img/biblia.jpg); /* Chrome 10-25, Safari 5.1-6 */
+      background:  url(../img/biblia.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+    }
+    
+    .textos-header h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    }
+    
+    .textos-header h2 {
+        font-size: 40px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding:60px;
+    
+    }
+    
+    .menu {
+        list-style: none;
+        padding: 2;
+        background:rgba(255, 255, 255, 0.467);
+        width: 80%;
+        max-width: 2000px;
+        margin:auto;
+    }
+    
+    .menu li a{
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+        display: block;
+    }
+    
+    .menu li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .menu li a:hover {
+    background: #ef8354;
+    }
+    
+    .textos-header .menu a {
+        font-size: 21px;
+    }
+
+    header .textos-header  {
+        display: flex;
+        height:530px;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    /*FIN MENU*/
+
+    /* CAJAS*/
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 35%;
+    margin-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+}
+
+.imagen-port{
+        width: 45%;
+        margin-bottom: 20px;
+        height: 300px;
+        text-align: center;
+        transform-style: preserve-3d;
+        transition: .7s ease;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+    
+    
+    
+
+    .imagen-port > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    .hover-galeria {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform:scale(0);
+        background: hsla(0, 100%, 50%, 0.7);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .hover-galeria img{
+        width: 80px;
+        
+    }
+
+    .hover-galeria p {
+        color: #fff;
+
+    }
+
+    .hover-galeria .fab{
+        font-size:30px;
+    margin: 4px;
+    }
+
+    .hover-galeria a  {
+       
+       text-decoration:none;
+       color: black;
+       line-height: 35px;
+   }
+   
+
+   .hover-galeria a:hover {
+       background: black;
+       color: white;
+   }
+
+
+    .imagen-port:hover .hover-galeria {
+        transform: scale(1);
+
+    }
+
+    /*FIN CAJAS*/
+
+/*DEVOCIONALES CSS ME PARECE MEJOR*/
+
+     h3 {
+        font-weight: 350;
+      }
+
+      
+      
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      
+      h3 {
+        font-size: 16px;
+        text-align: center;
+
+      }
+      
+      .container {
+        position: relative;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 450px;
+        z-index: 1;
+        perspective: 1000px;
+      }
+      .container .card {
+        width: 90%;
+        height: 90%;
+        transform-style: preserve-3d;
+        transition: all 600ms linear;
+      }
+      .container .card .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #282e33;
+      }
+      .container .card .front {
+        overflow: hidden;
+        z-index: 2;
+      }
+      .container .card .front h1 img {
+        position: relative;
+        position: relative;
+        left: 30%;
+        width: 600px;
+        height: 400px;
+      }
+      .container .card .back {
+        display: block;
+        transform: rotateX(180deg);
+        box-sizing: border-box;
+        padding: 30px;
+        color: #dddddd;
+        background: #282e33;
+        z-index: 1;
+        font-family: "Lato", sans-serif;
+      }
+      .container .card .back .icon-share {
+        position: absolute;
+        right: 10px;
+        bottom: 30px;
+      }
+      .container:hover .card {
+        transform: rotateX(180deg);
+      }
+      
+      button {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.9);
+        font: 0.8em "Lato", sans-serif;
+        background: rgba(16, 215, 175, 0.95);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        box-shadow: 0 4px 0 0 #0b9075;
+        cursor: pointer;
+        position: fixed;
+        z-index: 10;
+        top: 15px;
+        right: 20px;
+      }
+      button:hover {
+        color: white;
+        background: #10d7af;
+        top: 17px;
+      }
+
+      .container {
+        width: 95%;
+        max-width: 1600px;
+        margin: auto;
+        margin-top:70px;
+        justify-content: center;
+    
+    }
+            
+        /*TODA LA CARD VIENE HASTA ACA*/  
+    
+      
+/*CARGA PAGINA*/
+
+#contenedor_carga{
+    background-color:rgba(250, 240, 245, 0.9) ;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000 ;
+
+}
+
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: #f4266a;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite ;
+    animation: girar 1.5s linear infinite;
+
+}
+
+@keyframes girar {
+    from { transform:rotate(0deg) ;}
+    to {transform: rotate(360deg);}
+}
+
+  /*CARGA PAGINA*/
+
+/*TITULOS ROJOS*/
+  .titulo {
+    color:#ff0000;
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+ /*FIN TITULOS ROJOS*/
+
+
+
+
+
+
+
+
+
+/*DONACIONES DESPLIEGUE IMAGEN*/
+
+
+
+.item img {
+    border: 1px solid #fff;
+    cursor: pointer;
+    width: 700px;
+}
+
+.lightbox img {
+    width: 1000px;
+}
+.lightbox {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    background: rgba(0, 0, 0, .8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-close {
+    width: 60px;
+    height: 60px;
+    background: #ae4545;
+    border:3px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:8px;
+    position: absolute;
+    top: 20px;
+    right: 140px;
+    cursor: pointer;
+
+
+}
+
+
+
+   
+/*FIN DONACIONES DESPLIEGUE IMAGEN*/
+    
+
+
+
+/*FOOTER*/
+  
+footer{
+    width:100%;
+    background: #222;
+    color:#fff;
+    
+}
+
+.contenedor-footer-all {
+    width:100%;
+    max-width:1200px;
+    margin: auto;
+    padding:40px;
+}
+
+.n{
+    display: flex;
+}
+.contenedor-body {
+    display:flex;
+    justify-content: space-between;
+}
+
+.colum1 {
+    max-width:400px;
+}
+
+.colum1 h1 {
+    font-size: 25px;
+}
+
+.colum1 p {
+    font-size:14px;
+    
+    color:#c7c7c7;
+    margin-top:20px;
+}
+
+.colum2 {
+    max-width:400px;
+}
+
+.colum2 h1 {
+    font-size:25px;
+}
+
+.colum2 .row {
+    margin-top:10px;
+    display:flex;
+}
+
+.row img {
+    width:36px;
+    height:36px;
+}
+
+.row label {
+    margin-top:8px;
+    margin-left:15px;
+    color:#c7c7c7;
+}
+
+.colum3 {
+    max-width:400px;
+}
+
+.colum3 h1 {
+    font-size:25px;
+}
+
+.row2 {
+    margin-top:20px;
+    display:flex;
+}
+
+
+
+.row2 img {
+    width:36px;
+    height:36px;
+    
+}
+
+.row2 label {
+    margin-top:10px;
+    margin-left:10px;
+    max-width:160px;
+}
+
+.contenedor-footer {
+    width:100%;
+    background:#101010;
+    display:flex;
+    padding:15px;
+    justify-content:space-between;
+}
+
+.copyright {
+    color:#c7c7c7;
+}
+/*FIN FOOTER*/
+
+    
+/*BOTON WPP*/
+
+   .btn-wsp{
+    position:fixed;
+    width:70px;
+    height:70px;
+    line-height: 70px;
+    bottom:40px;
+    right:40px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:60px;
+    text-align:center;
+    font-size:45px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+
+.btn-wsp p{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:40px;
+    right:40px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:60px;
+    text-align:center;
+    font-size:50px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+
+/*FIN BTN WPP*/
+
+
+
+@media screen and (max-width:1000px) {
+
+    * 
+{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    
+    
+}
+
+/*MENU*/
+    .textos-header  { 
+        width: 100%;
+        height: 200px;
+         
+        
+        
+        background: url(../img/biblia.jpg); /* Chrome 10-25, Safari 5.1-6 */
+          background:  url(../img/biblia.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        
+        }
+        
+        .textos-header h1 {
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-align: center;
+        }
+        
+        .textos-header h2 {
+            font-size: 30px;
+            font-weight: 300;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding:20px;
+        
+        }
+
+        .menu {
+            list-style: none;
+            padding: 2;
+            background:rgba(255, 255, 255, 0.467);
+            width: 60%;
+            max-width: 2000px;
+            margin:auto;
+        }
+        
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            display: block;
+        }
+        
+        .menu li {
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .menu li a:hover {
+        background: #ef8354;
+        }
+        
+        .textos-header .menu a {
+            font-size: 21px;
+        }
+
+        /*FIN MENU*/
+
+   
+
+/*BOTON WPP*/
+
+    .btn-wsp{
+        position:fixed;
+        width:60px;
+        height:60px;
+        line-height: 60px;
+        bottom:40px;
+        right:220px;
+        background:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:45px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+        z-index:100;
+        transition: all 300ms ease;
+    }
+    .btn-wsp:hover{
+        background: #20ba5a;
+    }
+    
+    .btn-wsp p{
+        position:fixed;
+        width:60px;
+        height:60px;
+        line-height: 63px;
+        bottom:40px;
+        right:40px;
+        background:#25d366;
+        color:#FFF;
+        border-radius:60px;
+        text-align:center;
+        font-size:50px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+        z-index:100;
+        transition: all 300ms ease;
+    }
+
+    /*FIN BOTON WPP*/
+
+   
+    
+    /*IMAGEN ANUNCIOS*/
+
+    .item img {
+        border: 1px solid #fff;
+        cursor: pointer;
+        width: 500px;
+    }
+
+    .btn-close {
+        width: 60px;
+        height: 60px;
+        background: #ae4545;
+        border:3px solid #fff;
+        border-radius: 100%;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:8px;
+        position: absolute;
+        top: 80px;
+        right: 80px;
+        cursor: pointer;
+    
+    
+    }
+    
+    
+    .lightbox img {
+        width: 800px;
+    }
+
+    
+    .lightbox {
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        background: rgba(0, 0, 0, .8);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+/*FIN IMAGEN ANUNCIOS*/
+
+
+/*CAJAS*/
+
+
+.imagen-port{
+    width: 90%;
+    margin-bottom: 50px;
+    height: 400px;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port h2 {
+    font-size: 40px;
+        }
+    
+        .imagen-port p {
+            font-size: 25px;
+        }
+    
+        .hover-galeria p {
+            color: #fff;
+    
+        }
+    
+        .hover-galeria .fab{
+            font-size:50px;
+        margin: 4px;
+        }
+   
+/*FIN CAJAS*/
+ 
+/*-----------------------------*/
+
+/*FOOTER*/
+
+footer{
+    width:100%;
+    background: #222;
+    color:#fff;
+    
+}
+
+.contenedor-footer-all {
+    width:100%;
+    padding:20px;
+}
+
+.contenedor-body {
+    
+    justify-content: space-between;
+}
+
+.colum1 {
+    max-width:400px;
+}
+
+.colum1 h1 {
+    font-size: 25px;
+}
+
+.colum1 p {
+    font-size:14px;
+    
+    color:#c7c7c7;
+    margin-top:20px;
+}
+
+.colum2 {
+    max-width:400px;
+}
+
+.colum2 h1 {
+    font-size:25px;
+}
+
+.colum2 .row {
+    margin-top:10px;
+    display:flex;
+}
+
+.row img {
+    width:36px;
+    height:36px;
+}
+
+.row label {
+    margin-top:8px;
+    margin-left:15px;
+    color:#c7c7c7;
+}
+
+.colum3 {
+    max-width:400px;
+}
+
+.colum3 h1 {
+    font-size:25px;
+}
+
+.row2 {
+    margin-top:20px;
+    display:flex;
+}
+
+
+
+.row2 img {
+    width:36px;
+    height:36px;
+    
+}
+
+.row2 label {
+    margin-top:10px;
+    margin-left:10px;
+    max-width:160px;
+}
+
+.contenedor-footer {
+    width:100%;
+    background:#101010;
+    display:flex;
+    padding:15px;
+    justify-content:space-between;
+}
+
+.copyright {
+    color:#c7c7c7;
+}
+/*FIN FOOTER*/
+
+
+ 
+
+}
+
+
+
+@media screen and (max-width:500px) {
+
+    * 
+    {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Open Sans';
+        
+        
+    }
+
+    .textos-header  { 
+        width: 100%;
+        height: 50px;
+         
+        
+        
+        background: url(../img/biblia.jpg); /* Chrome 10-25, Safari 5.1-6 */
+          background:  url(../img/biblia.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+          background-size: cover;
+          background-attachment: fixed;
+          position: relative;
+        
+        }
+        
+        /*TITULO IGLESIA CRISIANA*/
+        .textos-header h1 {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding: 3px;
+        text-align: center;
+        }
+        /*TITULO HORARIOS*/
+        .textos-header h2 {
+            font-size: 15px;
+            font-weight: 50;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding:5px;
+        
+        }
+
+       
+    .item img {
+        border: 1px solid #fff;
+        cursor: pointer;
+        width: 750px;
+
+    }
+
+    .btn-wsp{
+        position:fixed;
+        width:70px;
+        height:70px;
+        line-height: 70px;
+        bottom:40px;
+        right:405px;
+        background:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:45px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+        z-index:100;
+        transition: all 300ms ease;
+    }
+    .btn-wsp:hover{
+        background: #20ba5a;
+    }
+    
+    .btn-wsp p{
+        position:fixed ;
+        width:60px;
+        height:60px;
+        line-height: 63px;
+        bottom:40px;
+        right:40px;
+        background:#25d366;
+        color:#FFF;
+        border-radius:60px;
+        text-align:center;
+        font-size:50px;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+        z-index:100;
+        transition: all 300ms ease;
+    }
+
+    .lightbox img {
+        width: 400px;
+    }
+    .lightbox {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        background: rgba(0, 0, 0, .8);
+        display:flex;
+        justify-content: left;
+        align-items: center;
+        
+    }
+    
+    .btn-close {
+        width: 60px;
+        height: 60px;
+        background: #ae4545;
+        border:3px solid #fff;
+        border-radius: 100%;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:8px;
+        position: absolute;
+        top: 110px;
+        right: 110px;
+        cursor: pointer;
+    
+    
+    }
+
+
+    /*CAJAS*/
+    .galeria-port {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+   
+
+.imagen-port{
+        width: 100%;
+        margin-bottom: 10px;
+        height: 300px;
+        
+        transform-style: preserve-3d;
+        transition: .7s ease;
+        
+       
+        cursor: pointer;
+        
+}
+    
+    
+    
+
+    .imagen-port > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    .hover-galeria {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform:scale(0);
+        background: hsla(0, 100%, 50%, 0.7);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+
+    .imagen-port h2 {
+font-size: 30px;
+    }
+
+    .imagen-port p {
+        font-size: 20px;
+    }
+
+
+    .hover-galeria img{
+        width: 100%;
+        
+    }
+
+    .hover-galeria p {
+        color: #fff;
+
+    }
+
+    .hover-galeria .fab{
+        font-size:45px;
+    margin: 4px;
+    }
+
+    .hover-galeria a  {
+       
+       text-decoration:none;
+       color: black;
+       line-height: 35px;
+   }
+   
+
+   .hover-galeria a:hover {
+       background: black;
+       color: white;
+   }
+
+
+    .imagen-port:hover .hover-galeria {
+        transform: scale(1);
+
+    }
+    /*FIN CAJAS*/
+
+
+    .menu {
+        list-style: none;
+        padding: 2;
+        background:rgba(255, 255, 255, 0.467);
+        width: 100%;
+        max-width: 5000px;
+        margin:auto;
+    }
+    
+    .menu li a{
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+        display: block;
+    }
+
+    /*FOOTER*/
+
+footer{
+    width:100%;
+    background: #222;
+    color:#fff;
+    
+}
+
+.contenedor-footer-all {
+    width:100%;
+    padding:20px;
+}
+
+.contenedor-body {
+    
+    justify-content: space-between;
+}
+
+.colum1 {
+    max-width:400px;
+}
+
+.colum1 h1 {
+    font-size: 25px;
+}
+
+.colum1 p {
+    font-size:14px;
+    
+    color:#c7c7c7;
+    margin-top:20px;
+}
+
+.colum2 {
+    max-width:400px;
+}
+
+.colum2 h1 {
+    font-size:25px;
+}
+
+.colum2 .row {
+    margin-top:10px;
+    display:flex;
+}
+
+.row img {
+    width:36px;
+    height:36px;
+}
+
+.row label {
+    margin-top:8px;
+    margin-left:15px;
+    color:#c7c7c7;
+}
+
+.colum3 {
+    max-width:400px;
+}
+
+.colum3 h1 {
+    font-size:25px;
+}
+
+.row2 {
+    margin-top:20px;
+    display:flex;
+}
+
+
+
+.row2 img {
+    width:36px;
+    height:36px;
+    
+}
+
+.row2 label {
+    margin-top:10px;
+    margin-left:10px;
+    max-width:160px;
+}
+
+.contenedor-footer {
+    width:100%;
+    background:#101010;
+    display:flex;
+    padding:15px;
+    justify-content:space-between;
+}
+
+.copyright {
+    color:#c7c7c7;
+}
+/*FIN FOOTER*/
+
+
+button {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font: 0.8em "Lato", sans-serif;
+    background: rgba(16, 215, 175, 0.95);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 0 0 #0b9075;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+    top: 15px;
+    right: 350px;
+  }
+  button:hover {
+    color: white;
+    background: #10d7af;
+    top: 17px;
+  }
+
+
+
+
+}
+    
+
+
+
